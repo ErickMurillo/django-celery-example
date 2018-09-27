@@ -1,1 +1,0 @@
-[2018-09-27 19:43:30,928: INFO/ForkPoolWorker-2] Task core.tasks.create_random_user_accounts2[bb7a1c95-71ed-4990-a51f-8afe55714cb1] succeeded in 0.281942643s: '2 random users created with success!'

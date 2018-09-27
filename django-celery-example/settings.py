@@ -41,6 +41,7 @@ INSTALLED_APPS = (
 
     'django_celery_results',
     'django_celery_beat',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,15 +87,11 @@ DATABASES = {
 }
 
 CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "PICKLE_VERSION": -1,  # Use the latest protocol version
-            "SOCKET_CONNECT_TIMEOUT": 60,  # in seconds
-            "SOCKET_TIMEOUT": 60,  # in seconds
-            "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379/',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
     }
 }
@@ -121,7 +118,8 @@ STATIC_URL = '/static/'
 
 #celery
 CELERY_BROKER_URL = 'amqp://localhost'
-CELERY_RESULT_BACKEND = 'django-cache'
+CELERY_RESULT_BACKEND = 'redis'
+CELERY_IGNORE_RESULT = False
 
 #redis
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
