@@ -1,0 +1,9 @@
+<a href="/">List</a>
+<a href="/generate">Generate</a>
+
+<br>
+<h3>Generar random users</h3>
+<form action="." method="POST" class="form-inline" enctype="multipart/form-data">{% csrf_token %}
+    {{form}}
+    <input type="submit" name="Submit" value="Submit">
+</form>

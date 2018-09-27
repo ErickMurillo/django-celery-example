@@ -1,0 +1,9 @@
+<a href="/">List</a>
+<a href="/generate">Generate</a>
+
+<br>
+<h3>Generar random users</h3>
+
+{% for user in users %}
+	{{user.id}} - {{user.username}} <br>
+{% endfor %}

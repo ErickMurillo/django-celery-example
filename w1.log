@@ -1,0 +1,9 @@
+[2018-09-27 18:17:40,453: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2018-09-27 18:17:40,462: INFO/MainProcess] mingle: searching for neighbors
+[2018-09-27 18:17:41,481: INFO/MainProcess] mingle: all alone
+[2018-09-27 18:17:41,491: WARNING/MainProcess] /home/luis/Practica/Virtual/exampleCelery/local/lib/python2.7/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-09-27 18:17:41,491: INFO/MainProcess] w1@luis-laptop ready.
+[2018-09-27 19:41:49,578: INFO/MainProcess] Received task: core.tasks.create_random_user_accounts2[7078d7b1-ad42-45c2-8f81-2a39dc4d9815]  
+[2018-09-27 19:42:58,254: INFO/MainProcess] Received task: core.tasks.create_random_user_accounts2[d1a2c5e9-782e-4dbc-a69b-0ba343cde083]  
+[2018-09-27 19:43:30,644: INFO/MainProcess] Received task: core.tasks.create_random_user_accounts2[bb7a1c95-71ed-4990-a51f-8afe55714cb1]  
